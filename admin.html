@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://i.postimg.cc/V64D9nB4/images.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Admin</title>
+</head>
+<body>
+    <div class="navbar">
+        <img src="https://i.postimg.cc/XJHWsywJ/download.png" id="logo">
+        <img src="https://i.postimg.cc/BQvv4KY3/WEBSITE-LOGO-280x.png" id="ltd">
+        <a href="./Index.html"><button id="button">Product</button></a>
+        <a href="./checkout.html"><button id="button">Checkout</button></a>
+        <a href="./admin.html"><button id="button">Admin</button></a>
+        <a href="#addProductModal" data-toggle="modal"  ><i class="material-icons"><i class="fa-solid fa-square-plus"></i></i> <span>Add Product </span></a>
+		<a href="#deleteProductModal"  data-toggle="modal" ><i class="material-icons"><i class="fa-solid fa-trash"></i></i> <span>Delete</span></a>	
+    </div> 
+
+    <h2 class="text-center">Admin</h2>
+    <table class="table table-hover">
+        <tbody>
+        <thead>
+            <tr>
+            
+            <th>Name</th>
+            <th>Design</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Action</th>
+            
+            </tr>
+        </thead>
+    </tbody>
+        <tbody>
+        <td>
+            
+        </td>
+
+       
+
+ </tbody>
+    </table>
+
+    <h2>CRUD SYSTEM</h2>
+    </section>
+            <center><form class="form" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                <div>
+                    <label>Product ID:</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                    <input type="text" name="id" id="id">
+                </div>
+                <div>
+                    <label>Product name:</label>
+                    <input type="text" name="pName" id="pName">
+                </div>
+                <div>
+                    <label>Product Price:</label>
+                    <input type="number" name="pPrice" id="pPrice">
+                </div>
+                <div>
+                    <label>Year Model:</label>
+                    <input type="text" name="year" id="year">
+                </div>
+                <div  class="form-action-buttons">
+                    <center><input type="submit" value="Add New Product"></center>
+                </div>
+            </form></center>
+    </tr>
+    <br>
+<table class="list" id="productList">
+    <tbody id="tbody-admin">
+      <th>ID</th>
+      <th>Product Name</th>
+      <th>Price</th>
+      <th>Year</th>
+      <th>Configure</th>
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script src="./JS/Admin.js"></script>
+    <script src="https://kit.fontawesome.com/25e6b32152.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

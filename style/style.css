@@ -1,0 +1,336 @@
+.navbar {
+	
+	overflow: hidden;
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	
+  }
+  .banner{
+	width: 100%;
+  }
+  
+  .navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	
+  }
+  #logo{
+	width: 80;
+	height: 80px;
+  }
+  .ltd{
+    width: ;
+    height: ;
+  }
+  .dropdown {
+	float: left;
+	overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+	cursor: pointer;
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	color: black;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+	background-color: red;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+	background-color: #ddd;
+  }
+  
+  .show {
+	display: block;
+  }
+
+  * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+#design{
+	height: 60%;
+	width: 19%;
+}
+#info{
+  color: red;
+  font-weight: bolder;
+  text-align: center;
+  font-family: arial black;
+}
+#board{
+  height: 45px;
+  width: 75px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+#button {
+	margin-left: 5%;
+	margin-right: 5%;
+	font-weight: bolder;
+	background-color: Red;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+  }
+  .container {
+	position: relative;
+	text-align: center;
+	color: black;
+	font-weight: bolder;
+	font-size: xx-large;
+  }
+  .centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+
+  footer {
+    width: 100%;
+    height: 100px;
+    color: white;
+    background: black;
+  }
+  #slogan{
+    font-weight: bolder;
+    text-align: center;
+    font-size: larger;
+    
+  }
+.text-center{align-content: center;}
+  table {
+    width: 100%;
+    border-collapse: collapse;
+      font-family: Tahoma, Geneva, sans-serif;
+  }
+  table td {
+    padding: 15px;
+  }
+  table thead td {
+    background-color: #54585d;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+    border: 1px solid #54585d;
+  }
+  table tbody td {
+    color: #636363;
+    border: 1px solid #dddfe1;
+  }
+  table tbody tr {
+    background-color: #f9fafb;
+  }
+  table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  .text-center{text-align: center;}
+  
+  /* Modal styles */
+	.modal .modal-dialog {
+		max-width: 400px;
+	}
+	.modal .modal-header, .modal .modal-body, .modal .modal-footer {
+		padding: 20px 30px;
+	}
+	.modal .modal-content {
+		border-radius: 3px;
+	}
+	.modal .modal-footer {
+		background: #ecf0f1;
+		border-radius: 0 0 3px 3px;
+	}
+    .modal .modal-title {
+        display: inline-block;
+    }
+	.modal .form-control {
+		border-radius: 2px;
+		box-shadow: none;
+		border-color: #dddddd;
+	}
+	.modal textarea.form-control {
+		resize: vertical;
+	}
+	.modal .btn {
+		border-radius: 2px;
+		min-width: 100px;
+	}	
+	.modal form label {
+		font-weight: normal;
+	}
+  .pagination {
+    float: right;
+    margin: 0 0 5px;
+}
+.pagination li a {
+    border: none;
+    font-size: 13px;
+    min-width: 30px;
+    min-height: 30px;
+    color: #999;
+    margin: 0 2px;
+    line-height: 30px;
+    border-radius: 2px !important;
+    text-align: center;
+    padding: 0 6px;
+}
+.pagination li a:hover {
+    color: #666;
+}	
+.pagination li.active a, .pagination li.active a.page-link {
+    background: #03A9F4;
+}
+.pagination li.active a:hover {        
+    background: #0397d6;
+}
+.pagination li.disabled i {
+    color: #ccc;
+}
+.pagination li i {
+    font-size: 16px;
+    padding-top: 6px
+}
+.hint-text {
+    float: left;
+    margin-top: 10px;
+    font-size: 13px;
+} 
+
+function productAddToTable() {
+  // First check if a <tbody> tag exists, add one if not
+  if ($("#productTable tbody").length == 0) {
+      $("#productTable").append("<tbody></tbody>");
+  }
+
+  // Append product to the table
+  $("#productTable tbody").append("<tr>" +
+      "<td>" + $("#productname").val() + "</td>" +
+      "<td>" + $("#introdate").val() + "</td>" +
+      "<td>" + $("#url").val() + "</td>" +
+      "</tr>");
+}
+
+
+
