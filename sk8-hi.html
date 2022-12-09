@@ -6,23 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://i.postimg.cc/V64D9nB4/images.png" type="image/x-icon">
     <link rel="stylesheet" href="./style/style.css">
-    <title>Era</title>
+    <title>SK8-HI</title>
     
 </head>
 <body>
    
     <div class="container">
         <img src="https://i.postimg.cc/MpG3jhQJ/Vans-Blank-Category-Banners-1920x344-2.jpg" class="banner">
-    <div class="centered">ERA</div>
+    <div class="centered">SK8-HI</div>
     </div>
-        <div class="container">
-        <div class="card">
+        <div class="container" >
+        
+          <div class="card">
           <div class="box">
             <div class="content">
-                <img src="https://i.postimg.cc/T29Hm6Tk/era.jpg" class="pic">
-              <h3>ERA</h3>
-              <p>Featuring sturdy canvas uppers in a range of heritage colorways, the Era Misprint energizes our timeless low top silhouette with effortless style</p>
-              <a href="#">Checkout</a>
+                <img src="https://i.postimg.cc/R0LMbJ22/shopping-2.webp" class="pic">
+              <h3>SKATEISTAN-SKATE-SK8-HI</h3>
+              <p>The Vans x Skateistan Sk8-Hi features our iconic checkerboard print mixed with embroidery. </p>
+              <button class="shoecheckout" id="button" onclick="addToCheckout({
+                Code : 'STAN8',
+                Name: 'SKATEISTAN-SKATE-SK8-HI' ,
+                Design: 'SK8-HI',
+                Price : 'R2200',
+                Quantity: '60',
+              })">Checkout</button>
             </div>
           </div>
         </div>
@@ -30,10 +37,16 @@
         <div class="card">
           <div class="box">
             <div class="content">
-              <img src="https://i.postimg.cc/hjZdPLj9/vna5fc9bro-brn-vna5fc9bro-brn-01-954425.jpg" class="pic">
-              <h3> SKATE ERA</h3>
-              <p>For modern skateboarding, the all-new Skate Classics collection delivers more of what skateboarders need to enable maximum progression.</p>
-              <a href="#">Checkout</a>
+              <img src="https://i.postimg.cc/13ctbdqW/vna5krublk-blk-vna5krublk-blk-01-990311.jpg" class="pic">
+              <h3>SK8-HI TAPERED ECO THEORY</h3>
+              <p>The Sk8-Hi Tapered Shoes are a deconstructed version of our legendary high top, features a more slender and fitted silhouette than the traditional Sk8-Hi.</p>
+              <button class="shoecheckout" id="button" onclick="addToCheckout({
+                Code : 'TCOTY',
+                Name: 'SK8-HI TAPERED ECO THEORY' ,
+                Design: 'SK8-HI',
+                Price : 'R2200',
+                Quantity: '60',
+              })">Checkout</button>
             </div>
           </div>
         </div>
@@ -41,17 +54,25 @@
         <div class="card">
           <div class="box">
             <div class="content">
-              <img src="https://i.postimg.cc/x8MYXQ59/vna5kx51re-brn-vna5kx51re-brn-01-990443.jpg" class="pic"
-              <h3>ERA PIG SUEDE</h3>
-              <p> Constructed with sturdy suede uppers, the Pig Suede Era energizes our timeless low top silhouette with effortless style.</p>
-              <a href="#">Checkout</a>
+              <img src="https://i.postimg.cc/7Lz4Js33/vna5fccora-org-vna5fccora-org-01-1012202.jpg" class="pic"
+              <h3>VANS X ONE PIECE SKATE SK8-HI</h3>
+              <p> The Vans x One Piece Skate Sk8-Hi blends all features of our Skate Classics line with an iconic WANTED poster.</p>
+              <button class="shoecheckout" id="button" onclick="addToCheckout({
+                Code : 'VXOPS',
+                Name: 'VANS X ONE PIECE SKATE SK8-HI' ,
+                Design: 'SK8-HI',
+                Price : 'R2500',
+                Quantity: '60',
+              })">Checkout</button>
             </div>
           </div>
         </div>
       </div>
 
       <style>
-        .card{background-image:url("https://i.postimg.cc/PJqmz72F/aa8c1b9f559ac7fb821d6485271ec6d8.jpg") }
+  .card{background-image:url("https://i.postimg.cc/PJqmz72F/aa8c1b9f559ac7fb821d6485271ec6d8.jpg") }
+  
+  
     .pic{
 	height: 150px;
 	width: 90%;
@@ -182,5 +203,6 @@
         color: #000;
       }
       </style>
+      <script src="./JS/shoes.js"></script>
 </body>
 </html>

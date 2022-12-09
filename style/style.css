@@ -245,92 +245,89 @@ img {vertical-align: middle;}
   table tbody tr:nth-child(odd) {
     background-color: #ffffff;
   }
-  
-  .text-center{text-align: center;}
-  
-  /* Modal styles */
-	.modal .modal-dialog {
-		max-width: 400px;
-	}
-	.modal .modal-header, .modal .modal-body, .modal .modal-footer {
-		padding: 20px 30px;
-	}
-	.modal .modal-content {
-		border-radius: 3px;
-	}
-	.modal .modal-footer {
-		background: #ecf0f1;
-		border-radius: 0 0 3px 3px;
-	}
-    .modal .modal-title {
-        display: inline-block;
-    }
-	.modal .form-control {
-		border-radius: 2px;
-		box-shadow: none;
-		border-color: #dddddd;
-	}
-	.modal textarea.form-control {
-		resize: vertical;
-	}
-	.modal .btn {
-		border-radius: 2px;
-		min-width: 100px;
-	}	
-	.modal form label {
-		font-weight: normal;
-	}
-  .pagination {
-    float: right;
-    margin: 0 0 5px;
-}
-.pagination li a {
-    border: none;
-    font-size: 13px;
-    min-width: 30px;
-    min-height: 30px;
-    color: #999;
-    margin: 0 2px;
-    line-height: 30px;
-    border-radius: 2px !important;
-    text-align: center;
-    padding: 0 6px;
-}
-.pagination li a:hover {
-    color: #666;
-}	
-.pagination li.active a, .pagination li.active a.page-link {
-    background: #03A9F4;
-}
-.pagination li.active a:hover {        
-    background: #0397d6;
-}
-.pagination li.disabled i {
-    color: #ccc;
-}
-.pagination li i {
-    font-size: 16px;
-    padding-top: 6px
-}
-.hint-text {
-    float: left;
-    margin-top: 10px;
-    font-size: 13px;
-} 
 
-function productAddToTable() {
-  // First check if a <tbody> tag exists, add one if not
-  if ($("#productTable tbody").length == 0) {
-      $("#productTable").append("<tbody></tbody>");
+  .close{
+    background-color: red;
   }
+  
+  .modal .modal-dialog {
+    max-width: 383px;
+  }
+  .modal .modal-header, .modal .modal-body, .modal .modal-footer {
+    padding: 20px 30px;
+    font-size: large;
+    
+  }
+  .modal-header{
+    height: 95px;
+    width: 100%;
+    font-size: ;
+    color: white;
+    background-image: url("https://i.postimg.cc/cLNp3zPB/26f7c4dc4822c5311c2e3fb9d31fcb28.jpg")
+  }
+  .modal .modal-content {
 
-  // Append product to the table
-  $("#productTable tbody").append("<tr>" +
-      "<td>" + $("#productname").val() + "</td>" +
-      "<td>" + $("#introdate").val() + "</td>" +
-      "<td>" + $("#url").val() + "</td>" +
-      "</tr>");
-}
+    
+    background-image:url(https://i.postimg.cc/prRtWcbq/e967694d199a89507508b1c482516804.jpg);
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: Tahoma, Geneva, sans-serif;
+  }
+  .modal .modal-footer {
+    height: 95px;
+    width: 100%;
+    background-image: url("https://i.postimg.cc/cLNp3zPB/26f7c4dc4822c5311c2e3fb9d31fcb28.jpg");
+    border-radius: 0 0 3px 3px;
+  }
+  
+  .modal .form-control {
+    border-radius: 2px;
+    box-shadow: none;
+    border-color: black;
+  }
+  .modal textarea.form-control {
+    resize: vertical;
+  }
+  .modal .btn {
+    border-radius: 2px;
+    min-width: 100px;
+  }	
+  .modal form label {
+    font-weight: normal;
+   
+  }	
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 1fr;
+    gap: 90px;
+  }
+  .grid-container>* {
+    grid-column: span 1;
+    grid-row: 1/2;
+    /* height: 400px; */
+   
+  }
+  /* .grid-container #deleteModal {
+    height: 310px;
+  } */
 
+  .grid-container .modal-footer {
+    display: flex;
+  }
+  /* #addModal{
+    height: 300px;
+    width: 400px;
+  }
+  #editModal{
+    height: 100%;
+    width: 350px;
+  }*/
+ /* #deleteModal{
+    height: 80px;
+    width: 350px;} */
+  
 
-
+  
+  

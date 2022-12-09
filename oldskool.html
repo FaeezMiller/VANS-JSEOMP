@@ -6,23 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://i.postimg.cc/V64D9nB4/images.png" type="image/x-icon">
     <link rel="stylesheet" href="./style/style.css">
-    <title>Authentic</title>
+    <title>OLD SKOOL</title>
     
 </head>
 <body>
    
     <div class="container">
         <img src="https://i.postimg.cc/MpG3jhQJ/Vans-Blank-Category-Banners-1920x344-2.jpg" class="banner">
-    <div class="centered">AUTHENTIC</div>
+    <div class="centered">OLD SKOOL</div>
     </div>
         <div class="container">
         <div class="card">
           <div class="box">
             <div class="content">
-                <img src="https://i.postimg.cc/BbVmxfwV/old-skool.jpg" class="pic">
-              <h3>OLD SKOOL SOLID BLACK</h3>
-              <p>Vans Old Skool sneaker is a classic in the Vans collection. Full of attitude, the Old Skool is durable and lightweight.</p>
-              <a href="#">Checkout</a>
+                <img src="https://i.postimg.cc/dQy9tbg4/vn-03z6l3a-vn-03z6l3a-blk-01-46712.jpg" class="pic">
+              <h3>LEATHER OLD SKOOL</h3>
+              <p> The Leather Old Skool, the Vans classic skate shoe and first to bare the iconic sidestripe.</p>
+              <button class="shoecheckout" id="button" onclick="addToCheckout({
+                Code : 'LTHOS',
+                Name: 'LEATHER OLD SKOOL' ,
+                Design: 'OLD SKOOL',
+                Price : 'R1000',
+                Quantity: '60',
+              })">Checkout</button>
             </div>
           </div>
         </div>
@@ -30,10 +36,17 @@
         <div class="card">
           <div class="box">
             <div class="content">
-              <img src="https://i.postimg.cc/0QNYyJXY/vna38g1p0s-blk-vna38g1p0s-blk-01-79254.jpg" class="pic">
-              <h3>PRIMARY CHECK OLD SKOOL</h3>
-              <p>A low top featuring canvas and suede uppers with the iconic Vans checkerboard print. </p>
-              <a href="#">Checkout</a>
+              <img src="https://i.postimg.cc/gjWL0T6T/vn-0d3hbka.jpg" class="pic">
+              <h3>CLASSIC OLD SKOOL</h3>
+              <p> Constructed from canvas, The Vans Old Skool Black/Black features the iconic stripe along the side of the shoe, and sits over a chunky midsole. </p>
+              <button class="shoecheckout" id="button" onclick="addToCheckout({
+                Code : 'CLSOS',
+                Name: 'CLASSIC OLD SKOOL' ,
+                Design: 'OLD SKOOL',
+                Price : 'R1100',
+                Quantity: '60',
+              })">Checkout</button>
+              
             </div>
           </div>
         </div>
@@ -41,17 +54,26 @@
         <div class="card">
           <div class="box">
             <div class="content">
-              <img src="https://i.postimg.cc/NfVXmkQF/vna5jmibzw-bkw-vna5jmibzw-bkw-01-989926.jpg" class="pic"
-              <h3>OLD SKOOL VANS COLLAGE</h3>
-              <p>Old Skool with a unique new addition: a random doodle drawn by founder Paul Van Doren.”</p>
-              <a href="#">Checkout</a>
+              <img src="https://i.postimg.cc/bNGdhPMw/vna5fcbb9m-blk-vna5fcbb9m-blk-01-352866.jpg" class="pic"
+              <h3>SKATE OLD SKOOL PRO</h3>
+              <p>The new Skate Classics Old Skool gives you the iconic look you want with all the performance benefits.It is made with sturdy suede and canvas uppers. </p>
+              <button class="shoecheckout" id="button" onclick="addToCheckout({
+                Code : 'SK8OS',
+                Name: 'SKATE OLD SKOOL PRO' ,
+                Design: 'OLD SKOOL',
+                Price : 'R1100',
+                Quantity: '60',
+              })">Checkout</button>
             </div>
           </div>
         </div>
       </div>
 
       <style>
-        .card{background-image:url("https://i.postimg.cc/PJqmz72F/aa8c1b9f559ac7fb821d6485271ec6d8.jpg") }
+    
+    .card{
+      background-image:url("https://i.postimg.cc/PJqmz72F/aa8c1b9f559ac7fb821d6485271ec6d8.jpg"
+      ) }
     .pic{
 	height: 150px;
 	width: 90%;
@@ -182,5 +204,6 @@
         color: #000;
       }
       </style>
+      <script src="./JS/shoes.js"></script>
 </body>
 </html>

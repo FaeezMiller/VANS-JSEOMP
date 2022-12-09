@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   
     <link rel="shortcut icon" href="https://i.postimg.cc/V64D9nB4/images.png" type="image/x-icon">
     <link rel="stylesheet" href="./style/style.css">
     <title>Admin</title>
@@ -15,8 +17,10 @@
         <a href="./Index.html"><button id="button">Product</button></a>
         <a href="./checkout.html"><button id="button">Checkout</button></a>
         <a href="./admin.html"><button id="button">Admin</button></a>
-        <a href="#addProductModal" data-toggle="modal"  ><i class="material-icons"><i class="fa-solid fa-square-plus"></i></i> <span>Add Product </span></a>
-		<a href="#deleteProductModal"  data-toggle="modal" ><i class="material-icons"><i class="fa-solid fa-trash"></i></i> <span>Delete</span></a>	
+        
+        
+        <a href="#addModal"><button id="button" data-toggle="modal"><i class="fa-solid fa-square-plus"></i><span>Add </span></button></a>
+		<a href="#deleteModal"><button id="button"  data-toggle="modal"> <i class="fa-solid fa-trash"></i><span>Delete</span></button></a>
     </div> 
 
     <h2 class="text-center">Admin</h2>
@@ -43,41 +47,100 @@
 
  </tbody>
     </table>
-
-    <h2>CRUD SYSTEM</h2>
-    </section>
-            <center><form class="form" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
-                <div>
-                    <label>Product ID:</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
-                    <input type="text" name="id" id="id">
-                </div>
-                <div>
-                    <label>Product name:</label>
-                    <input type="text" name="pName" id="pName">
-                </div>
-                <div>
-                    <label>Product Price:</label>
-                    <input type="number" name="pPrice" id="pPrice">
-                </div>
-                <div>
-                    <label>Year Model:</label>
-                    <input type="text" name="year" id="year">
-                </div>
-                <div  class="form-action-buttons">
-                    <center><input type="submit" value="Add New Product"></center>
-                </div>
-            </form></center>
-    </tr>
+<div class="grid-container">
+    <div id="addModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">						
+                        <h3 class="modal-title">Add Product  <button  type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa-solid fa-xmark"></i></button></h3>
+                        
+                    </div>
+                    <div class="modal-body">					
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Design</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Price</label>
+                            R  <input type="number" class="form-control" required></input>
+                        </div>
+                        <div class="form-group">
+                            <label>Quantity</label>
+                            <input type="number" class="form-control" required>
+                        </div>					
+                    </div>
+                    <div class="modal-footer">
+                        <input id="button" type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                        <input id="button" type="submit" class="btn btn-success" value="Add">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <br>
-<table class="list" id="productList">
-    <tbody id="tbody-admin">
-      <th>ID</th>
-      <th>Product Name</th>
-      <th>Price</th>
-      <th>Year</th>
-      <th>Configure</th>
-    </tbody>
-</table>
+    <!-- Edit Modal HTML -->
+    <div id="editModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">						
+                        <h3  class="modal-title">Edit Product  <button  type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa-solid fa-xmark"></i></button></h3>
+                        
+                    </div>
+                    <div class="modal-body">					
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Design</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Price</label>
+                            <input type="number" class="form-control" required></input>
+                        </div>
+                        <div class="form-group">
+                            <label>Quantity</label>
+                            <input type="number" class="form-control" required>
+                        </div>					
+                    </div>
+                    <div class="modal-footer">
+                        <input id="button" type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                        <input id="button" type="submit" class="btn btn-info" value="Save">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Delete Modal HTML -->
+    <div id="deleteModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">						
+                        <h3 class="modal-title">Delete Product  <button  type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa-solid fa-xmark"></i></button></h3>
+                        
+                    </div>
+                    <div class="modal-body">					
+                        <p>Are you sure you want to delete these Records?</p>
+                        <p class="text-warning"><small>This action cannot be undone.</small></p>
+                    </div>
+                    <div class="modal-footer">
+                        <input id="button" type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                        <input id="button" type="submit" class="btn btn-danger" value="Delete">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> 
 
 
 
