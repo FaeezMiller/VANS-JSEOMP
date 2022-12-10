@@ -1,6 +1,4 @@
-let products = JSON.parse(localStorage.getItem('products'))?
-JSON.parse(localStorage.getItem('products')): [
-
+ const products = JSON.parse(localStorage.getItem('products')) || [
     {
         "image" : "https://i.postimg.cc/dQy9tbg4/vn-03z6l3a-vn-03z6l3a-blk-01-46712.jpg",
         "Name": "Classic slip-ons",
@@ -120,28 +118,40 @@ JSON.parse(localStorage.getItem('products')): [
         "Price" : "R1500",
         "Quatity": ""
     },
-
+    
 ];
-
-function displayProduct(){
-    let tbody = document.querySelector('tbody');
-    Object.keys(products).forEach((item)=>{
-        if(products.length){
-            console.log(`${item}: ${products[item]}`);
-            tbody.innerHTML +=
-            `
-            <div class="card col-4>
-            <img src="${product[item].image}" class="img-card">
-            <div class="card-body">
-            <h5 class="card-title">${product[item].Name}- ${products[item].Design}-${products[item].Price}-${products[item].Quatity}<h5>
-            <button>Checkout</button>
+localStorage.setItem('products', JSON.stringify(products))
+let productsLS = JSON.parse(localStorage.getItem('products'))
+const categories = [...new Set(productsLS.map((item)=>
+    {return item}))]
+    let i=0;
+document.getElementById('root').innerHTML = categories.map((item)=>
+{
+    let {image, title, price} = item;
+    return(
+        `<div class='box'>
+            <div class='img-box'>
+                <img class='images' src=${image}></img>
             </div>
-            </div>
-            `
-        }
-    })
+        <div class='bottom'>
+        <p>${title}</p>
+        <h2>R ${price}.00</h2>`+
+        "<button onclick='addtocart("+(i++)+")'>Add to checkout</button>"+
+        `</div>
+        </div>
+        <style>
+            .box:hover{
+                scale: 1.1;
+                border: 1px solid grey;
+                z-index: 2
+            }
+        </style>
+        `
+    )
+}).join('')
+function addtocart(a){
+    cart.push({...categories[a]});
+    console.log({...categories[a]});
+    localStorage.setItem('cart', JSON.stringify(cart))
+    displaycart();
 }
-
-displayProducts()
-localStorage.setItem('products',JSON.stringify(products));
-let prods = JSON.parse(localStorage.getItem('products'))

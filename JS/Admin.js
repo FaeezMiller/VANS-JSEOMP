@@ -137,5 +137,4 @@ function displayProduct(){
 
 displayProduct()
 
-// $(document).ready(function(){
-// 	$('[data-toggle="tooltip"]').tooltip();}
+

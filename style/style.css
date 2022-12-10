@@ -8,6 +8,10 @@
   .banner{
 	width: 100%;
   }
+  #checkout{
+    text-align: center;
+  }
+  
   
   .navbar a {
 	float: left;
