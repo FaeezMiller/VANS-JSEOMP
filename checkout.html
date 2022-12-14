@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrs">
+    <link rel="stylesheet" href="./style/checkout.css">
+   
     <title>Checkout</title>
 </head>
 <body>
@@ -15,56 +16,60 @@
         <a href="./Index.html"><button id="button">Product</button></a>
         <a href="./checkout.html"><button id="button">Checkout</button></a>
         <a href="./admin.html"><button id="button">Admin</button></a>
-        
-    
-        
-        <!-- <a href="#addModal"><button ap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="shortcut icon" href="https://i.postimg.cc/V64D9nB4/images.png" type="image/x-icon">
-    <link rel="stylesheet" href="./style/style.csid="button" data-toggle="modal"><i class="fa-solid fa-square-plus"></i><span>Add </span></button></a>
-		<a href="#deleteModal"><button id="button"  data-toggle="modal"> <i class="fa-solid fa-trash"></i><span>Delete</span></button></a> -->
      </div> 
-
-     <h2 class="displat-5 mb-5" class="checkout"><strong>Checkout</strong></h2>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid" id="box">
+     <body>
+ 
+  
+      
+        <main>
+            
+       <div class="shopping-cart-wrapper">
+         <table class="table is-fullwidth shopping-cart">
+           <thead>
+             <tr>
+               <th></th>
+               <th>Name</th>
+               <th>Price</th>
+               <th>Purchase</th>
+               <th>Total</th>
+             </tr>
+           </thead>
+         </table>
+        
+             <div class="totals">
+               <div class="totals-item">
+                 <h2><label>Subtotal</label></h2>
+                 <div class="totals-value" id="cart-subtotal">R0</div>
+               </div>
+           <div class="totals-item">
+             <h2><label>Tax (5%)</label></h2>
+             
+             <div class="totals-value" id="cart-tax">R0</div>
+           </div>
+           <div class="totals-item">
+              <h2><label>Shipping</label></h2>
+             <div class="totals-value" id="cart-shipping">R0</div>
+           </div>
+           <div class="totals-item totals-item-total">
+             <h2><label>Grand Total</label></h2>
+             <div class="totals-value" id="cart-total">R0</div>
+           </div>
+         </div>
+         <button class="checkout">Checkout</button>
+       
+    </div>
+       </table>    
+        </main>
+        
+             
+         
+         
            
-            <br />
-            <button
-              class="navbar-toggler ms-5"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <br />
-               
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <div class="header">
-          <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
-        <div class="container">
-          <div id="root"></div>
-        </div>
-        <div class="sidebar">
-          <div class="head"><p>My Checkout</p></div>
-          <div id="cartItem">Checkout is empty</div>
-          <div class="foot">
-              <h3 id="sum">Total:</h3>
-              <h2 id="total">R 0.00</h2>
-          </div>
-        </div>
-        <!-- <script src="../js/products.js"></script> -->
-      <script src="../js/checkout.js"></script>
-      </body>
+           
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script> 
+         </body>
+     
+
 
 <br>
 <br>
@@ -72,10 +77,9 @@
     <p id="slogan">OFF THE WALL SINCE 1966</p> 
     <img src="https://i.postimg.cc/t4jr0xGz/Picture-16.png" id="board">
    </footer>
-  <script src="./JS/product.js"></script>
   <script src="./JS/checkout.js"></script>
     <!-- <script src="./JS/shoes.js"></script> -->
     <script src="https://kit.fontawesome.com/25e6b32152.js" crossorigin="anonymous"></script>
-</body>
+
 
 </html>
