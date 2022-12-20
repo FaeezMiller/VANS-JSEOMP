@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/checkout.css">
-   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <title>Checkout</title>
 </head>
 <body>
@@ -18,56 +18,10 @@
         <a href="./admin.html"><button id="button">Admin</button></a>
      </div> 
      <body>
- 
+      <input type='button' onclick='tableFromJson()'  />
+    <p id="showData"></p>
   
-      
-        <main>
-            
-       <div class="shopping-cart-wrapper">
-         <table class="table is-fullwidth shopping-cart">
-           <thead>
-             <tr>
-               <th></th>
-               <th>Name</th>
-               <th>Price</th>
-               <th>Purchase</th>
-               <th>Total</th>
-             </tr>
-           </thead>
-         </table>
-        
-             <div class="totals">
-               <div class="totals-item">
-                 <h2><label>Subtotal</label></h2>
-                 <div class="totals-value" id="cart-subtotal">R0</div>
-               </div>
-           <div class="totals-item">
-             <h2><label>Tax (5%)</label></h2>
-             
-             <div class="totals-value" id="cart-tax">R0</div>
-           </div>
-           <div class="totals-item">
-              <h2><label>Shipping</label></h2>
-             <div class="totals-value" id="cart-shipping">R0</div>
-           </div>
-           <div class="totals-item totals-item-total">
-             <h2><label>Grand Total</label></h2>
-             <div class="totals-value" id="cart-total">R0</div>
-           </div>
-         </div>
-         <button id="checkout">Checkout</button>
-       
-    </div>
-       </table>    
-        </main>
-        
-             
-         
-         
-           
-           
-        
-         </body>
+    </body>
      
 
 

@@ -1,182 +1,138 @@
-var taxRate = 0.05;
-var shipping = 15.0;
-$(function() {
-  var jsonData = [
+let tableFromJson = () => {
+  // the json data.
+  const myShoes = [
     {
       title: "LEATHER OLD SKOOL",
       price: 1000,
-      quantity: 0,
-      total: 0
+      quantity: 1,
+      total: 38
     },
     {
       title: "CLASSIC OLD SKOOL",
       price: 1100,
-      quantity: 0,
-      total: 0
+      quantity: 1,
+      total: 23.5
     },
     {
       title: "SKATE OLD SKOOL PRO",
       price: 1100,
-      quantity: 0,
-      total: 0
+      quantity: 1,
+      total: 100
     },
     {
       title: "ERA",
       price: 900,
-      quantity: 0,
-      total: 0
+      quantity: 1,
+      total: 45
     },
     {
       title: "SKATE ERA",
       price: 1900,
-      quantity: 0,
-      total: 0
+      quantity: 1,
+      total: 66
     },
     {
       title: "ERA PIG SUEDE",
       price: 2000 ,
-      quantity: 0,
-      total: 0
+      quantity: 1,
+      total: 86
     },
     {
       title: "CLASSIC SLIP-ON",
       price: 1000,
-      quantity: 0,
-      total: 0
+      quantity: 1,
+      total: 86
     },
     {
       title: "CLASSIC SLIP-ONS CHECKERBOARD",
       price: 1000,
-      quantity: 0,
-      total: 0
+      quantity: 1,
+      total: 86
     },
     {
       title: "GREY CHECKER SLIP-ON",
       price: 1100,
-      quantity: 0,
-      total: 0
+      quantity: 1,
+      total: 86
     },
     {
       title: "SKATEISTAN-SKATE-SK8-HI",
       price: 2200,
-      quantity: 0,
-      total: 0
+      quantity: 1,
+      total: 86
     },
     {
       title: "SK8-HI TAPERED ECO THEORY",
       price: 2300,
-      quantity: 0,
+      quantity: 1,
       total: 86
     },
     {
       title: "VANS X ONE PIECE SKATE SK8-HI",
       price: 2500,
-      quantity: 0,
-      total: 0
+      quantity: 1,
+      total: 86
     },
     {
       title: "OLD SKOOL SOLID BLACK",
       price: 1500,
-      quantity: 0,
-      total: 0
+      quantity: 1,
+      total: 86
     },
     {
       title: "PRIMARY CHECK OLD SKOOL",
       price: 1500,
-      quantity: 0,
-      total: 0
+      quantity: 1,
+      total: 86
     },
     {
       title: "OLD SKOOL VANS COLLAGE",
       price: 1500,
-      quantity: 0,
-      total: 0
+      quantity: 1,
+      total: 86
     },
     
     
-  ];
-  var html = "<tbody>";
-  $.each(jsonData, function() {
-    html +=
-      '<tr class="cart-item">' +
-      "        <td>" +
-      '          <input type="checkbox" class="cart-item-check" checked />' +
-      "        </td>" +
-      "        <td>" +
-      "          " +
-      this.title +
-      "        </td>" +
-      "        <td>$" +
-      this.price +
-      "</td>" +
-      "        <td>" +
-      '          <input class="input is-primary cart-item-qty" style="width:100px" type="number" min="1" value="' +
-      this.quantity +
-      '" data-price="' +
-      this.price +
-      '">' +
-      "        </td>" +
-      '        <td class="cart-item-total">$' +
-      this.total +
-      "</td>" +
-      "        <td>" +
-      '          <a class="button is-small">DELETE</a>' +
-      "        </td>" +
-      "      </tr>";
-  });
-  html += "</tbody>";
-  $(".shopping-cart").append(html);
-  
-  recalculateCart();
-
-  $(".cart-item-check").change(function() {
-    recalculateCart();
-  });
-
-  $(".cart-item-qty").change(function() {
-    var $this = $(this);
-    var parent = $this.parent().parent();
-    parent.find(".cart-item-check").prop("checked", "checked");
-    var price = $this.attr("data-price");
-    var quantity = $this.val();
-    var total = price * quantity;
-    parent.find(".cart-item-total").html(total.toFixed(2));
-    recalculateCart();
-  });
-
-  $(".button").click(function() {
-    var parent = $(this)
-      .parent()
-      .parent();
-    parent.remove();
-    recalculateCart();
-  });
-});
-function recalculateCart() {
-  var subTotal = 0;
-  var grandTotal = 0;
-  var tax = 0;
-  var items = $(".cart-item");
-  $.each(items, function() {
-    var itemCheck = $(this).find(".cart-item-check");
-    var itemQuantity = $(this).find(".cart-item-qty");
-    if (itemCheck.prop("checked")) {
-      var itemTotal = itemQuantity.val() * itemQuantity.attr("data-price");
-      subTotal += itemTotal;
+  ]
+  // Extract value from table header. 
+   
+    let col = [];
+    for (let i = 0; i < myShoes.length; i++) {
+      for (let key in myShoes[i]) {
+        if (col.indexOf(key) === -1) {
+          col.push(key);
+        }
+      }
     }
-  });
-  if (subTotal > 0) {
-    tax = subTotal * taxRate;
-    grandTotal = subTotal + tax + shipping;
-    $(".totals,.checkout").show();
-  } else {
-    $(".totals,.checkout").hide();
+
+    // Create table.
+    const table = document.createElement("table");
+
+    // Create table header row using the extracted headers above.
+    let tr = table.insertRow(-1);                   
+
+    for (let i = 0; i < col.length; i++) {
+      let th = document.createElement("th");      
+      th.innerHTML = col[i];
+      tr.appendChild(th);
+    }
+
+    // add json data to the table as rows.
+    for (let i = 0; i < mShoes.length; i++) {
+
+      tr = table.insertRow(-1);
+
+      for (let j = 0; j < col.length; j++) {
+        let tabCell = tr.insertCell(-1);
+        tabCell.innerHTML = myShoes[i][col[j]];
+      }
+    }
+
+    // Now, add the newly created table with json data, to a container.
+    const divShowData = document.getElementById('showData');
+    divShowData.innerHTML = "";
+    divShowData.appendChild(table);
   }
-  $("#cart-subtotal").html(subTotal.toFixed(2));
-  $("#cart-total").html(grandTotal.toFixed(2));
-  $("#cart-tax").html(tax.toFixed(2));
-  $("#cart-shipping").html(shipping.toFixed(2));
-}
 
 
 
