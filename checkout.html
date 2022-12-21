@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/checkout.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
     <title>Checkout</title>
 </head>
 <body>
@@ -18,21 +18,30 @@
         <a href="./admin.html"><button id="button">Admin</button></a>
      </div> 
      <body>
-      <input type='button' onclick='tableFromJson()'  />
-    <p id="showData"></p>
+      
   
-    </body>
-     
-
-
-<br>
+     </body>
+     <table>
+        <thead>
+           <tr>
+              <th><h2>Name</h2></th>
+              <th><h2>Price</h2></th>
+              <th><h2>Quantity</h2></th>
+              <th><h2>Total</h2></th>
+           </tr>
+        </thead>
+        <tbody id="data-output">
+        </tbody>
+     </table>
+     <script src="./products.json"></script>
 <br>
 <footer>
     <p id="slogan">OFF THE WALL SINCE 1966</p> 
     <img src="https://i.postimg.cc/t4jr0xGz/Picture-16.png" id="board">
 </footer>
   <script src="./JS/checkout.js"></script>
-  <script src="https://kit.fontawesome.com/25e6b32152.js" crossorigin="anonymous"></script>
+  
+  
 
 
 </html>
