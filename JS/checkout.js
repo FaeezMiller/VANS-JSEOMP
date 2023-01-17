@@ -19,7 +19,7 @@ let tableFromJson = () => {
      "Item" : "3",
      "Title": "SKATE OLD SKOOL PRO",
      "Price": "R1100",
-     "Total": "169",
+     "Total": "69",
      "Purchase": '<center><img src="https://i.postimg.cc/QM66fLzf/icons8-paid-50.png" id="cart"></center>'
    },
    {
