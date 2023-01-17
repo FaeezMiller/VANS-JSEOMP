@@ -5,91 +5,106 @@ let tableFromJson = () => {
      "Item" : "1",
      "Title": "LEATHER OLD SKOOL",
      "Price": "R1000",
-     "Total": "38"
+     "Total": "69",
+     "Purchase": '<center><img src="https://i.postimg.cc/QM66fLzf/icons8-paid-50.png" id="cart"></center>'
    },
    {
      "Item" : "2",
      "Title": "CLASSIC OLD SKOOL",
      "Price": "R1100",
-     "Total": "23"
+     "Total": "69",
+     "Purchase": '<center><img src="https://i.postimg.cc/QM66fLzf/icons8-paid-50.png" id="cart"></center>'
    },
    {
      "Item" : "3",
      "Title": "SKATE OLD SKOOL PRO",
      "Price": "R1100",
-     "Total": "100"
+     "Total": "169",
+     "Purchase": '<center><img src="https://i.postimg.cc/QM66fLzf/icons8-paid-50.png" id="cart"></center>'
    },
    {
      "Item" : "4",
      "Title": "ERA",
      "Price": "R900",
-     "Total": "45"
+     "Total": "69",
+     "Purchase": '<center><img src="https://i.postimg.cc/QM66fLzf/icons8-paid-50.png" id="cart"></center>'
    },
    {
      "Item" : "5",
      "Title": "SKATE ERA",
      "Price": "R1900",
-     "Total": "66"
+     "Total": "69",
+     "Purchase": '<center><img src="https://i.postimg.cc/QM66fLzf/icons8-paid-50.png" id="cart"></center>'
    },
    {
      "Item" : "6",
      "Title": "ERA PIG SUEDE",
      "Price": "R2000" ,
-     "Total": "86"
+     "Total": "69",
+     "Purchase": '<center><img src="https://i.postimg.cc/QM66fLzf/icons8-paid-50.png" id="cart"></center>'
    },
    {
      "Item" : "7",
      "Title": "CLASSIC SLIP-ON",
      "Price": "R1000",
-     "Total": "86"
+     "Total": "69",
+     "Purchase": '<center><img src="https://i.postimg.cc/QM66fLzf/icons8-paid-50.png" id="cart"></center>'
    },
    {
      "Item" : "8",
      "Title": "CLASSIC SLIP-ONS CHECKERBOARD",
      "Price": "R1000",
-     "Total": "86"
+     "Total": "69",
+     "Purchase": '<center><img src="https://i.postimg.cc/QM66fLzf/icons8-paid-50.png" id="cart"></center>'
    },
    {
      "Item" : "9",
      "Title": "GREY CHECKER SLIP-ON",
      "Price": "R1100",
-     "Total": "86"
+     "Total": "69",
+     "Purchase": '<center><img src="https://i.postimg.cc/QM66fLzf/icons8-paid-50.png" id="cart"></center>'
    },
    {
      "Item" : "10",
      "Title": "SKATEISTAN-SKATE-SK8-HI",
      "Price": "R2200",
-     "Total": "86"
+     "Total": "69",
+     "Purchase": '<center><img src="https://i.postimg.cc/QM66fLzf/icons8-paid-50.png" id="cart"></center>'
    },
    {
      "Item" : "11",
      "Title": "SK8-HI TAPERED ECO THEORY",
      "Price": "R2300",
-     "Total": "86"
+     "Total": "69",
+     "Purchase": '<center><img src="https://i.postimg.cc/QM66fLzf/icons8-paid-50.png" id="cart"></center>'
    },
    {
      "Item" : "12",
      "Title": "VANS X ONE PIECE SKATE SK8-HI",
      "Price": "R2500",
-     "Total": "86"
+     "Total": "69",
+     "Purchase": '<center><img src="https://i.postimg.cc/QM66fLzf/icons8-paid-50.png" id="cart"></center>'
    },
    {
      "Item" : "13",
      "Title": "OLD SKOOL SOLID BLACK",
      "Price": "R1500",
-     "Total": "86"
+     "Total": "69",
+     "Purchase": '<center><img src="https://i.postimg.cc/QM66fLzf/icons8-paid-50.png" id="cart"></center>'
    },
    {
      "Item" : "14",
      "Title": "PRIMARY CHECK OLD SKOOL",
      "Price": "R1500",
-     "Total": "86"
+     "Total": " 69",
+     "Purchase": '<center><img src="https://i.postimg.cc/QM66fLzf/icons8-paid-50.png" id="cart"></center>'
    },
    {
      "Item" : "15",
      "Title": "OLD SKOOL VANS COLLAGE",
      "Price": "R1500",
-     "Total": "86"
+     "Total": "86 ",
+     "Purchase": '<center><img src="https://i.postimg.cc/QM66fLzf/icons8-paid-50.png" id="cart"></center>'
    }
    
    
