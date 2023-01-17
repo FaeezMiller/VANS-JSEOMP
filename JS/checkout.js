@@ -5,7 +5,6 @@ let tableFromJson = () => {
      "Item" : "1",
      "Title": "LEATHER OLD SKOOL",
      "Price": "R1000",
-     "Quantity": "  " ,
      "Total": "38"
    },
    {
